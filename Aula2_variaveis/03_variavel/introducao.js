@@ -1,3 +1,5 @@
+
+
 var treinamento = 'javaScript';
 let duracao = 32;
 const avaliacao_da_turma = 'TOP';

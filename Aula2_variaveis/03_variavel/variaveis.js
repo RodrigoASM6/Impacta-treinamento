@@ -1,3 +1,10 @@
+// Linguagens Interpretadas: São intepretadas por um programa externo - HTML, CSS, JavaScript, PHP, ASP
+// Não se clara
+
+// Variaveis é um espaço na memoria de trabalho (RAM) onde guardo informações somente durante a execução do programa.
+
+// Tipos de variaveis
+
 let inteiro = 50;
 console.log(inteiro);
 
@@ -62,23 +69,13 @@ console.log(minhaListaDeVariaveis[3])
 
 
 objeto.bairro = 'Bela Vista';
-objeto.['rua'] = 'AV Paulista';
+objeto['rua'] = 'AV Paulista';
 
 lista.push(10);
 console.log(lista);
 
 
-let meuObjeto {
-    'vazio': {}
-    'nome' : 'Impacta'
-    objeto.
 
-
-
-
-
-
-}
 
 
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function primeira(num1, num2){   
+            var resposta = num1 + num2;
+            return resposta;
+         }
+
+       
+    </script>
+</head>
+<body>
+    <button onclick="alert('testando')">Aperte-me</button>
+    <br>
+    <button onclick="alert(primeira(50,70))">Primeira</button>
+    <br>
+    <button id="um"> Não Obstrutivo button</button>
+    <hr>
+    <button id="dois">Botão</button>
+
+    <input type="button" value ="botaoinput" ondblclick="alert('oi')">
+    <input type="button" value ="botaoInput Não Obstrutivo">
+
+    <script>
+        document.getElementById('um').onclick = function(){
+            alert('testando 2');
+            }
+            
+        document.getElementById('dois').onmouseover = function(){
+            alert('oi');
+            console.log('ui');
+            alert(45 * 38);
+        }    
+    </script>
+</body>
+</html>
