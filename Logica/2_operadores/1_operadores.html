@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //operadores de atribuição de atribuição
+        /*num <- 5; variavel num recebe o valor 5 ou 
+        o conteud 5 é atribuido à variavel num
+        
+        *No JS o operador de atribuição e o "="
+        
+        */
+       let num = 5;
+       console.log(num);
+       num = 652;
+       console.log(num);
+
+       //acumular valores:
+       num = num + 8;
+       console.log(num);
+       //forma reduzida de acumular
+       num += 8;
+       console.log(num);
+       //incremento e decremento
+       //somar ou subtrair 1 do valor da variavel
+        num++;
+        console.log(num);//669
+        ++num;
+        console.log(num);//670
+        num--;
+        console.log(num);//669
+        --num;
+        console.log(num);//668
+
+        //Em Strings
+        let nome = "Eduardo";
+        console.log(nome);
+        nome = nome + " Pretel "
+        console.log(nome);
+        nome += "Filho"
+        console.log(nome);
+        //Eduardo Pretel Filho
+
+        //////////////////////////////////////////
+
+        //Operadores aritimeticos
+        /*
+
+        + adição
+        - subtração
+        * multiplicação
+        / divisão
+        % resto da divisão
+        ** potencias
+
+        */
+
+        console.log(5+3);
+        console.log(5-3);
+        console.log(5*3);
+        console.log(5/3);
+        console.log(5%3);
+        console.log(5**3);
+
+        console.log(Math.pow(5,3));
+        console.log(Math.sqrt(5,3)); //raiz quadrada
+        console.log(Math.round(25.3));
+        console.log(Math.ceil(25.3));
+        console.log(Math.floor(25.99));
+        console.log(Math.trunc(25.99));
+
+        //Fazer equação de segundo grau
+
+
+
+        //https://www;w3schools.com/js
+
+        //Operador literal - concatenação => +
+
+        console.log(5+3); //8
+        console.log("5"+"3"); // 53
+        console.log("5"+3); // 53
+        console.log(Number("5")+3); //transforma String em numero
+        console.log(parseInt("5")+3) //transforma em numero inteiro
+        console.log(parseFloat("5.8")+3) //transforma em numero flutuante
+        console.log("Edu "+"Pretel"); // Edu Pretel
+        console.log("Edu"+" "+"Pretel"); //Edu Pretel
+
+        //Operadores de comparação
+        //Comparam dois valores apenas e retorna true ou false
+        
+        //Igualdade
+        //somente verifica o valor - não verifica o dado
+        let x = 9;
+        console.log(x == 5); // false 9 não é igual a 5
+        console.log("5" == 5); //true ele verifica somente o valor, não o tipo, indepedente de ser String
+        
+        //Identicidade
+    
+        console.log("5" === 5); // false embora sejam iguais não são mesmo tipo
+
+        //Sensitive case
+        console.log("Edu" == "edu");// false
+
+        //Diferença
+
+        //Não existe, devemos usar a negação
+        //diferente !=
+        //não identico !==
+
+        console.log("5"!=5);//false
+        console.log("5"!==5);//true
+
+        ////////////////////////////////////
+
+        console.log("maior ou menor");
+        /*
+        <- menor
+        >- maior
+
+        forma reduzida
+
+        <= menor ou igual
+        >= maior ou igual
+        
+        */
+
+        console.log(4<=4);//true
+        console.log(3<=4);//true
+        console.log(3<4)//true
+
+        ////////////////////////////////////////////
+
+
+        //Operadores Logicos
+
+        //Faço mais de uma comparação e QUERO APENAS UM RESULTADO
+
+        console.log("comparador logico AND")
+        // AND - não se usa mais
+        // && = utilizar isto
+        //todas as verificações tem que retornar TRUE para que o conjuto toto retorne TRUE
+
+        console.log(4<=4 && 8==9);// (TRUE && FALSE) FALSE
+        console.log(4<=4 && 8!=9); // (TRUE && TRUE) TRUE
+
+        //OR
+
+        console.log("comparador logico AND")
+        // OR - não se usa mais
+        // || = utilizar isto
+        // Todas as verivicações tem que retornar False para
+        //que o conjuto todo retorne FLASE
+        //Basta uma ser TRUE para o conjunto todo retornar TRUE
+
+        console.log(4<=4 || 8==9);// (TRUE || FALSE) TRUE
+        console.log(4>=10 || 8==9); // (FALSE || FALSE) FALSE
+
+        
+        //XOR
+        
+        // XOR - Não se usa XOR
+        // ^ - utiliza isto
+        // XOR - OU exclusivo OU unico
+        // Somente uma verificação pode retornar TRUE para que todo o conjunto retorne TRUE
+
+        console.log(4<=4 ^ 8==9);// (TRUE ^ FALSE) TRUE
+        console.log(4>=10 ^ 8==9); // (FALSE ^ FALSE) FALSE
+        console.log(4<=4 ^ 8!=9); //(TRUE ^ TRUE) FALSE
+
+
+        //OPERADOR TERNARIO
+        console.log( 5 === "5" ? "VERDADEIRO" : "MANÉ"); // Irá retornar MANÉ
+        console.log(5 === 5 ? "VERDADEIRO" : "MANÉ") // Irá retornar VERDADEIRO        
+        
+        //Negação
+
+        console.log(!true); //Não TRUE = FALSE 
+        console.log(!false) //Não FALSE = TRUE
+
+
+        //////////////////////////////////////////
+
+    
+        </script>
+</body>
+</html>
