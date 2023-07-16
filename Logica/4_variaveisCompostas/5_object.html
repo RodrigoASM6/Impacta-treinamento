@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   
+   <script>
+        class Cursos{
+            //propriedades - variaveis descritas dentro da class
+            //para criar propriedades teremos a mesma regra de variavel
+            prog = 'JavaScript';
+            db = 'MongoDB';
+            marcacao = 'HTML';
+            estilo = 'CSS';
+            qquercoisa;
+
+            //funcoes dentro de classe sao chamadas de METEDO
+            primeira(num1, num2){
+                return num1/num2;
+            }
+        
+        }
+
+        //new é o construtor de classes
+
+        let temas = new Cursos;
+        let temas2= new Cursos;
+
+        document.write(temas);
+        console.log(temas);
+        console.log(temas2)
+
+        document.write(temas['prog']);
+
+        //dot syntax
+        console.log(temas.prog);
+        console.log(temas.db);
+        temas.qquercoisa = "Vendaval";
+        console.log(temas.qquercoisa);
+
+        let resp = temas.primeira(8,2);
+        console.log(resp);
+
+        console.log(temas2.primeira(18,20));
+        
+        
+   </script> 
+</body>
+</html>

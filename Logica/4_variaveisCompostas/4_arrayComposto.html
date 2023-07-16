@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //const carros = [['Argos', 'Toro'], ['CRV', 'WRV', 'FIT', 'HRV'], ['Bolt', 'S10', 'Celta']];
+        const carros = [
+            ['Argos', 'Toro'], 
+            ['CRV', 'WRV', 'FIT', 'HRV'], 
+            ['Bolt', 'S10', 'Celta'],
+            [
+                ['novos','novissimos'], 
+                ['sp2', 'Opala', 'DodgeDart']
+            ]
+        ];
+
+        document.write(carros);
+        console.log(carros);
+        console.log(carros.length);//4;
+        console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+        console.log(carros[0].length);//4
+        console.log(carros[1].length);//4;
+        console.log(carros[2].length);//4;
+        console.log(carros[3].length);//4;
+        console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+        console.log(carros[3][0].length);//4
+        console.log(carros[3][1].length);
+        console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+        console.log(carros[3][0][0].length);//4
+        console.log(carros[3][1][2].length);
+    </script>
+</body>
+</html>

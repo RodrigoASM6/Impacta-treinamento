@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Declarar uma variavel dentro de uma função 
+        // e querer que ela tenha escopo global
+        
+        
+        let res = 'Samba';
+        var resposta = 'Agostinho';
+        
+
+        function testarVariavel()
+        {
+            let res = 'Impacta';
+            var resposta = 'Lineu';
+            pergunta = "Oiiiii???"; // sera criada com escopo global
+            alert(res +  '  ' + resposta + ' ' + pergunta);
+            
+        }
+        
+        testarVariavel();
+        document.write(res + ' ' + resposta + ' '+ pergunta);
+        
+
+    </script>
+</body>
+</html>

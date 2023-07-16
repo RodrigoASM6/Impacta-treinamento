@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        //qual é o 1o multiplo comum entre 11, 13 e 17
+
+        let cont = 1;
+        let achei = false;
+        
+        while(achei == false){
+            if(cont % 11 == 0){
+                document.write(`o numero é: ${cont}`);
+                achei = true;
+            }
+            cont++;
+        }
+
+
+
+        //quais sao os multiplos de 3 que estao entre 1 e 100
+   /*
+    for(i=1;i<=100;i++){
+        if(i % 3 == 0){
+        document.write(`${i},`);
+        }
+    }   
+
+    document.write("<hr>")
+
+    for(i=3;i<=100;i = i + 3){
+        document.write(`${i},`);
+    }
+    */   
+
+    //fatorial de 5
+    
+    n = prompt("Digite um numero entre 1 e 10")
+    let fatorial = 1
+
+    for(i=1;i<=n;i++){
+        fatorial = fatorial * i;
+    }
+    
+    document.write(`O fatorial de ${n} é ${i}`)
+
+    </script>
+
+
+</body>
+</html>
