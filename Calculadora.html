@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+      
+    </script>
+</head>
+<body>
+<input type="text" id="resultado" value="0">
+<br>
+<input type="button" id="incrementa" value="++"> 
+<input type="button" id="decrementa" value="--">   
+<hr>
+
+Num 1: <input type="text" id="num1">
+<br>
+Num 2: <input type="text" id="num2">
+<br>
+<input type="button" id="soma" value="+"> 
+<input type="button" id="subtrai" value="-">
+<input type="button" id="multiplica" value="*"> 
+<input type="button" id="divide" value="/">
+<p>O Resultado é:<span id="resp"></span></p>
+
+<script>
+    
+        
+        let resposta = document.getElementById('resultado');
+        document.getElementById('incrementa').onclick = function(){
+        resposta.value = Number(resposta.value) + 1;
+
+    }
+
+    document.getElementById('decrementa').onclick = ()=>{
+        //let resposta = document.getElementById('resultado');
+        resposta.value = Number(resposta.value) - 1;
+
+    }
+
+    ////////////////////////////
+    //document.getElementById('soma').onclick = function()[];
+    //document.getElementById('soma').onclick = ()=>[];
+    //document.getElementById('soma').addEventListener();
+    //document.getElementById('soma').addEventListener('evento',função);
+    //document.getElementById('soma').addEventListener('click',function(){});
+    //document.getElementById('soma').addEventListener('click',()=>{});
+    //document.getElementById('soma').addEventListener('click',function(){});
+    
+    let numero1 = document.getElementById('num1');
+    let numero2 = document.getElementById('num2');
+    let resp = document.getElementById('resp');
+    
+
+    document.getElementById('soma').addEventListener('click',()=>{
+    let soma = parseFloat(numero1.value) + parseFloat(numero2.value);
+    
+   //alert(resp.innerText);
+   //alert(resp.innerHTML);
+   resp.innerHTML = `O resultado da soma de ${numero1.value} com ${numero2.value} é ${soma}`;
+});
+
+document.getElementById('subtrai').addEventListener('click',()=>{
+    let subtrai = parseFloat(numero1.value) - parseFloat(numero2.value);
+    resp.innerHTML = `O resultado da subtração de ${numero1.value} com ${numero2.value} é ${subtrai}`;
+});
+
+document.getElementById('multiplica').addEventListener('click',()=>{
+    let multiplica = parseFloat(numero1.value) * parseFloat(numero2.value);
+    resp.innerHTML = `O resultado da multiplicação de ${numero1.value} com ${numero2.value} é ${multiplica}`;
+});
+
+document.getElementById('divide').addEventListener('click',()=>{
+    let divide = parseFloat(numero1.value) / parseFloat(numero2.value);
+    resp.innerHTML = `O resultado da divisão de ${numero1.value} por ${numero2.value} é ${divide}`;
+});
+
+
+</script>
+
+</body>
+</html>
