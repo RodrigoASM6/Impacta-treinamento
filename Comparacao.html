@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+                
+            
+    </script>
+</head>
+<body>
+    <p>Num1: <input type="text" id="num1"></p>
+    <p>Num2: <input type="text" id="num2"></p>
+    <p><input type="button" id="compara" value="Comparar"></p>
+
+    <p>Resultado = <span id="resultado"> </span></p>
+
+    
+        
+    <script>
+
+       
+        
+        function compararNumeros() {
+            
+            
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let resultado = document.getElementById("resultado");
+            
+
+            if (isNaN(num1) || isNaN(num2)) {
+                resultado.innerHTML = "Por favor, insira números válidos.";
+            } else {
+                if (num1 === num2) {
+                    resultado.innerHTML = "Os números são iguais.";
+                } else if (num1 > num2) {
+                    resultado.innerHTML = `O número ${num1} é maior que ${num2}.`;
+                } else {
+                    resultado.innerHTML = `O número ${num1} é menor que ${num2}.`;
+                }
+            }
+        }
+        
+        document.getElementById('compara').addEventListener('click',compararNumeros);
+
+    </script>
+</body>
+</html>
